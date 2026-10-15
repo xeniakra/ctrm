@@ -1,0 +1,356 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Bluehaven Aviation Ltd",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Amsterdam",
+        "incoterm": "FOB",
+        "place": "Amsterdam"
+      },
+      "delivery_window": {
+        "from": "2026-10-18",
+        "to": "2026-10-20"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "net 30 days B/L against docs",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": {
+              "document_type": "documents",
+              "relation": "against"
+            },
+            "due": {
+              "day_basis": "days",
+              "days": 30,
+              "event": "bill_of_lading",
+              "qualifier": "net",
+              "relation": null
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": null,
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": 3.25
+        },
+        "period": {
+          "expression": "BL-2..BL+2",
+          "from_offset_days": -2,
+          "kind": "bl_relative",
+          "to_offset_days": 2
+        },
+        "quote_code": "PLATTS_FOB_ARA_JET",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Jet A-1",
+        "product_code": "JETA1",
+        "reference_name": "Jet A-1"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 7,
+        "unit": "BBL",
+        "value": 300000
+      },
+      "recap_date": "2026-09-03",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": "Ocean Finch"
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 124,
+            "kind": "source",
+            "start": 102
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 258,
+            "kind": "source",
+            "start": 251
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 170,
+            "kind": "source",
+            "start": 157
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 170,
+            "kind": "source",
+            "start": 157
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 170,
+            "kind": "source",
+            "start": 157
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 190,
+            "kind": "source",
+            "start": 178
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 190,
+            "kind": "source",
+            "start": 178
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 291,
+            "kind": "source",
+            "start": 263
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_ARA_JET",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 250,
+            "kind": "source",
+            "start": 196
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 132,
+            "kind": "source",
+            "start": 125
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 132,
+            "kind": "source",
+            "start": 125
+          },
+          {
+            "file": "data/products.csv",
+            "key": "JETA1",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "JETA1",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 156,
+            "kind": "source",
+            "start": 135
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 156,
+            "kind": "source",
+            "start": 135
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 156,
+            "kind": "source",
+            "start": 135
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 156,
+            "kind": "source",
+            "start": 135
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 21,
+            "kind": "source",
+            "start": 11
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 98,
+            "kind": "source",
+            "start": 77
+          }
+        ],
+        "field": "/deal/seller"
+      },
+      {
+        "evidence": [
+          {
+            "end": 307,
+            "kind": "source",
+            "start": 296
+          }
+        ],
+        "field": "/deal/vessel"
+      }
+    ],
+    "questions": []
+  },
+  "id": "05_mixed_units",
+  "source": {
+    "path": "data/recaps/recap_05.txt",
+    "sha256": "7ad675a044ddf02cf4e5a3f358e8f49f4ca83e49895463d5d1241e7fdd228c8a"
+  }
+}

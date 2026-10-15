@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "optiflow-ctrm-recap"
+version = "0.1.0"
+description = "Safe local-LLM extraction of physical oil-deal recaps"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.10,<3",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0,<2"]
+dev = ["pytest>=8.3,<9", "pytest-cov>=6.0,<7"]
+big-model = [
+    "vllm>=0.8.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/optiflow_ctrm", "mcp_client_demonstration"]

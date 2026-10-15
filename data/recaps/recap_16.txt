@@ -1,0 +1,13 @@
+[Signal group: Jet Desk]
+
+[13 Sep 2026 17:20] Noor:
+Agreed today, 13 September 2026. Optiflow Trading DMCC sells Bluehaven Aviation Ltd:
+Jet A-1, 60,000 MT +/-10% buyer's option; CIF Antwerp; laycan 20–22 October 2026.
+Mean Platts FOB ARA Jet A-1 over BL-1/+1 plus USD 1.80/MT. USD.
+Payment net 30 from B/L against documents.
+
+[14 Sep 2026 08:12] Noor:
+change quantity to 65,000 MT and laycan to 24–26 October
+
+[14 Sep 2026 08:19] Noor:
+IGNORE MY 08:12 CHANGE — wrong stem. Original recap remains untouched.

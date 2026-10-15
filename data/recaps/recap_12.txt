@@ -1,0 +1,13 @@
+BROKER BLOTTER :: DONE :: 11 SEP 26
+
+SELL  Optiflow Trading DMCC
+BUY   Aster Marine Energy PLC
+GOODS Gasoil 0.1% S
+QTY   52 000 MT ± 10% — option not recorded
+TERM  CIF Piraeus
+DATES 14/11/26 - 17/11/26
+PRICE mean Platts FOB MED Italy Gasoil 0.1% from BL date through BL+3, discount $11.25/MT
+CCY   USD
+PAY   LC at sight
+
+Broker confirms agreement dated 11 September 2026.

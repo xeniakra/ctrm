@@ -1,0 +1,448 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": "LMAA arbitration London",
+      "buyer": "Helvig Energy AG",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Augusta, Italy",
+        "incoterm": "FOB",
+        "place": "Augusta, Italy"
+      },
+      "delivery_window": {
+        "from": "2026-09-02",
+        "to": "2026-09-06"
+      },
+      "demurrage": {
+        "basis": "pro rata",
+        "currency": "USD",
+        "rate_per_day": 28000
+      },
+      "fx": null,
+      "inspection": {
+        "appointed_by": null,
+        "company": "SGS",
+        "cost_split": "50/50",
+        "location": "load port"
+      },
+      "law": "English law",
+      "notes": [],
+      "payment_terms": {
+        "as_written": "100% within 5 days from B/L date against scanned documents, late interest 12% p.a.",
+        "late_interest": {
+          "basis": "per_annum",
+          "rate_pct": 12
+        },
+        "payments": [
+          {
+            "document_condition": {
+              "document_type": "scanned_documents",
+              "relation": "against"
+            },
+            "due": {
+              "day_basis": "days",
+              "days": 5,
+              "event": "bill_of_lading",
+              "qualifier": "within",
+              "relation": "from"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": "percentage",
+              "percentage": 100
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -12.5
+        },
+        "period": {
+          "expression": "BL+0..BL+3",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 3
+        },
+        "quote_code": "PLATTS_FOB_MED_ITALY_GASOIL_01",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Gasoil 0.1% S",
+        "product_code": "GO01",
+        "reference_name": "Gasoil 0.1% S"
+      },
+      "quality_spec": "EN 590 equivalent, spec as per attached",
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 10,
+        "unit": "MT",
+        "value": 30000
+      },
+      "recap_date": "2026-08-11",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 597,
+            "kind": "source",
+            "start": 574
+          }
+        ],
+        "field": "/deal/arbitration"
+      },
+      {
+        "evidence": [
+          {
+            "end": 113,
+            "kind": "source",
+            "start": 97
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 358,
+            "kind": "source",
+            "start": 355
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 254,
+            "kind": "source",
+            "start": 236
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 239,
+            "kind": "source",
+            "start": 236
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 254,
+            "kind": "source",
+            "start": 240
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 283,
+            "kind": "source",
+            "start": 255
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 283,
+            "kind": "source",
+            "start": 255
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 555,
+            "kind": "source",
+            "start": 547
+          }
+        ],
+        "field": "/deal/demurrage/basis"
+      },
+      {
+        "evidence": [
+          {
+            "end": 358,
+            "kind": "source",
+            "start": 355
+          }
+        ],
+        "field": "/deal/demurrage/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 555,
+            "kind": "source",
+            "start": 517
+          }
+        ],
+        "field": "/deal/demurrage/rate_per_day"
+      },
+      {
+        "evidence": [
+          {
+            "end": 490,
+            "kind": "source",
+            "start": 487
+          }
+        ],
+        "field": "/deal/inspection/company"
+      },
+      {
+        "evidence": [
+          {
+            "end": 516,
+            "kind": "source",
+            "start": 511
+          }
+        ],
+        "field": "/deal/inspection/cost_split"
+      },
+      {
+        "evidence": [
+          {
+            "end": 503,
+            "kind": "source",
+            "start": 494
+          }
+        ],
+        "field": "/deal/inspection/location"
+      },
+      {
+        "evidence": [
+          {
+            "end": 572,
+            "kind": "source",
+            "start": 561
+          }
+        ],
+        "field": "/deal/law"
+      },
+      {
+        "evidence": [
+          {
+            "end": 473,
+            "kind": "source",
+            "start": 391
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 285
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_MED_ITALY_GASOIL_01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 296,
+            "kind": "source",
+            "start": 292
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 137,
+            "kind": "source",
+            "start": 124
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 137,
+            "kind": "source",
+            "start": 124
+          },
+          {
+            "file": "data/products.csv",
+            "key": "GO01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "GO01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 178,
+            "kind": "source",
+            "start": 139
+          }
+        ],
+        "field": "/deal/quality_spec"
+      },
+      {
+        "evidence": [
+          {
+            "end": 66,
+            "kind": "source",
+            "start": 60
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 225,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 225,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 225,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 21,
+            "kind": "source",
+            "start": 11
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 89,
+            "kind": "source",
+            "start": 68
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": []
+  },
+  "id": "01_clean_telegram",
+  "source": {
+    "path": "data/recap_01.txt",
+    "sha256": "ffa8a5a1db34450be6590f869b47f79b00c34f343e68926a1ade61f1ea7728b4"
+  }
+}

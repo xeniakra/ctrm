@@ -1,0 +1,345 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Optiflow Trading DMCC",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Fujairah",
+        "incoterm": "FOB",
+        "place": "Fujairah"
+      },
+      "delivery_window": {
+        "from": "2026-10-15",
+        "to": "2026-10-31"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [
+        "two or maybe three stems, roughly 5,000 metric tonnes apiece",
+        "exact cargo count later"
+      ],
+      "payment_terms": {
+        "as_written": "Cash two business days before each lifting",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": "business_days",
+              "days": 2,
+              "event": "each_lifting",
+              "qualifier": null,
+              "relation": "before"
+            },
+            "instrument": "cash",
+            "irrevocable": null,
+            "portion": {
+              "kind": null,
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -1.5
+        },
+        "period": {
+          "expression": "BL+0..BL+2",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 2
+        },
+        "quote_code": "PLATTS_FOB_FUJ_VLSFO",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "VLSFO 0.5% S",
+        "product_code": "VLSFO",
+        "reference_name": "VLSFO 0.5% S"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": null,
+        "tolerance_pct": null,
+        "unit": "MT",
+        "value": null
+      },
+      "recap_date": "2026-09-12",
+      "seller": "Gulfstar Bunkering LLC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 101,
+            "kind": "source",
+            "start": 80
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 308,
+            "kind": "source",
+            "start": 297
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 197,
+            "kind": "source",
+            "start": 185
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 197,
+            "kind": "source",
+            "start": 185
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 197,
+            "kind": "source",
+            "start": 185
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 229,
+            "kind": "source",
+            "start": 211
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 229,
+            "kind": "source",
+            "start": 211
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 183,
+            "kind": "source",
+            "start": 123
+          }
+        ],
+        "field": "/deal/notes/0"
+      },
+      {
+        "evidence": [
+          {"end": 409, "kind": "source", "start": 386}
+        ],
+        "field": "/deal/notes/1"
+      },
+      {
+        "evidence": [
+          {
+            "end": 352,
+            "kind": "source",
+            "start": 310
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_FUJ_VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 295,
+            "kind": "source",
+            "start": 231
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 120,
+            "kind": "source",
+            "start": 108
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 120,
+            "kind": "source",
+            "start": 108
+          },
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 183,
+            "kind": "source",
+            "start": 123
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 21,
+            "kind": "source",
+            "start": 10
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 72,
+            "kind": "source",
+            "start": 50
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": [
+      {
+        "field": "/deal/quantity/value",
+        "question": "What exact contractual quantity was agreed, and is it per cargo or total?"
+      },
+      {
+        "field": "/deal/quantity/tolerance_pct",
+        "question": "What quantity tolerance percentage applies?"
+      },
+      {
+        "field": "/deal/quantity/tolerance_option",
+        "question": "Whose option applies to the quantity tolerance: buyer or seller?"
+      }
+    ]
+  },
+  "id": "13_multi_cargo",
+  "source": {
+    "path": "data/recaps/recap_13.txt",
+    "sha256": "b6ba1507e011ac95efc2f042dd807bd07cd128ac91945a90c19aa2899631cd14"
+  }
+}

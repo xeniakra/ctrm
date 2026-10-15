@@ -1,0 +1,15 @@
+From: asia.desk@optiflow-dmcc.example
+Date: Mon, 14 Sep 2026 12:03 +0400
+Subject: CONFIRMED / Seacrest VLSFO
+
+Main recap agreed 14 September 2026:
+Seller Optiflow Trading DMCC; buyer Seacrest Marine Pte Ltd.
+VLSFO 0.5% S, 26,000 MT ±10% at seller's option.
+FOB Fujairah, laycan 25–27 October 2026.
+Mean Platts FOB Fujairah VLSFO 0.5% over B/L +0/+3, minus USD 0.75/MT.
+USD; 100% prepaid two banking days before loading.
+Demurrage USD 31,500/day pro rata.
+
+UNRELATED DESK NOTE — do not merge with the recap above:
+Nordlint naphtha discussion is 220,000 bbl, CFR Rotterdam, 3–7 November,
+Argus CIF NWE Naphtha plus USD 8/MT. It is not confirmed.

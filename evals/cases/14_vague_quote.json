@@ -1,0 +1,336 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Eastgate Mobility BV",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "CIF Antwerp",
+        "incoterm": "CIF",
+        "place": "Antwerp"
+      },
+      "delivery_window": {
+        "from": "2026-11-20",
+        "to": "2026-11-22"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "net fifteen days after B/L against originals",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": {
+              "document_type": "original_documents",
+              "relation": "against"
+            },
+            "due": {
+              "day_basis": "days",
+              "days": 15,
+              "event": "bill_of_lading",
+              "qualifier": "net",
+              "relation": "after"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": null,
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -2.0
+        },
+        "period": {
+          "expression": "BL+0..BL+3",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 3
+        },
+        "quote_code": null,
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Ultra Low Sulphur Diesel 10 ppm",
+        "product_code": "ULSD10",
+        "reference_name": "Ultra Low Sulphur Diesel 10 ppm"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 8,
+        "unit": "MT",
+        "value": 21000
+      },
+      "recap_date": "2026-09-13",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 85,
+            "kind": "source",
+            "start": 65
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 345,
+            "kind": "source",
+            "start": 333
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 199,
+            "kind": "source",
+            "start": 188
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 199,
+            "kind": "source",
+            "start": 188
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 199,
+            "kind": "source",
+            "start": 188
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 229,
+            "kind": "source",
+            "start": 210
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 229,
+            "kind": "source",
+            "start": 210
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 399,
+            "kind": "source",
+            "start": 355
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 331,
+            "kind": "source",
+            "start": 244
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 331,
+            "kind": "source",
+            "start": 244
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 331,
+            "kind": "source",
+            "start": 244
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 331,
+            "kind": "source",
+            "start": 244
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 331,
+            "kind": "source",
+            "start": 244
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 331,
+            "kind": "source",
+            "start": 244
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 331,
+            "kind": "source",
+            "start": 244
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 137,
+            "kind": "source",
+            "start": 106
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 137,
+            "kind": "source",
+            "start": 106
+          },
+          {
+            "file": "data/products.csv",
+            "key": "ULSD10",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "ULSD10",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 186,
+            "kind": "source",
+            "start": 139
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 186,
+            "kind": "source",
+            "start": 139
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 186,
+            "kind": "source",
+            "start": 139
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 186,
+            "kind": "source",
+            "start": 139
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 431,
+            "kind": "source",
+            "start": 401
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 56,
+            "kind": "source",
+            "start": 35
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": [
+      {
+        "field": "/deal/pricing/quote_code",
+        "question": "Which exact Platts quotation is the pricing basis?"
+      }
+    ]
+  },
+  "id": "14_vague_quote",
+  "source": {
+    "path": "data/recaps/recap_14.txt",
+    "sha256": "e81a3b861e110a25e50ae1ba8295bb147de23349d706437ccce5b0657d345ccf"
+  }
+}

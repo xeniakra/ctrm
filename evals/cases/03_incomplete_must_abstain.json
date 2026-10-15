@@ -1,0 +1,210 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": null,
+      "currency": null,
+      "delivery_term": {
+        "as_written": "delivered Fujairah",
+        "incoterm": null,
+        "place": "Fujairah"
+      },
+      "delivery_window": {
+        "from": null,
+        "to": null
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [
+        "2-3 cargoes of about 5,000 mt each"
+      ],
+      "payment_terms": null,
+      "pricing": {
+        "differential": {
+          "unit": null,
+          "value": null
+        },
+        "period": null,
+        "quote_code": null,
+        "statistic": null
+      },
+      "product": {
+        "as_written": "VLSFO 0.5",
+        "product_code": "VLSFO",
+        "reference_name": "VLSFO 0.5% S"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": null,
+        "tolerance_pct": null,
+        "unit": "MT",
+        "value": null
+      },
+      "recap_date": "2026-08-24",
+      "seller": "Gulfstar Bunkering LLC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 134,
+            "kind": "source",
+            "start": 116
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 134,
+            "kind": "source",
+            "start": 126
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 103,
+            "kind": "source",
+            "start": 69
+          }
+        ],
+        "field": "/deal/notes/0"
+      },
+      {
+        "evidence": [
+          {
+            "end": 114,
+            "kind": "source",
+            "start": 105
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 114,
+            "kind": "source",
+            "start": 105
+          },
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 158,
+            "kind": "source",
+            "start": 61
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 21,
+            "kind": "source",
+            "start": 11
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 298,
+            "kind": "source",
+            "start": 276
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": [
+      {
+        "field": "/deal/buyer",
+        "question": "What is the buyer's full legal entity name?"
+      },
+      {
+        "field": "/deal/quantity/value",
+        "question": "What exact contractual quantity was agreed?"
+      },
+      {
+        "field": "/deal/quantity/tolerance_pct",
+        "question": "What quantity tolerance percentage applies?"
+      },
+      {
+        "field": "/deal/quantity/tolerance_option",
+        "question": "Whose option applies to the quantity tolerance: buyer or seller?"
+      },
+      {
+        "field": "/deal/delivery_term/incoterm",
+        "question": "What agreed Incoterm applies?"
+      },
+      {
+        "field": "/deal/delivery_window/from",
+        "question": "What is the exact delivery-window start date?"
+      },
+      {
+        "field": "/deal/delivery_window/to",
+        "question": "What is the exact delivery-window end date?"
+      },
+      {
+        "field": "/deal/pricing/quote_code",
+        "question": "Which exact publication quotation is the pricing basis?"
+      },
+      {
+        "field": "/deal/pricing/statistic",
+        "question": "Which quotation statistic applies: mean, high, low, or mean of high?"
+      },
+      {
+        "field": "/deal/pricing/period",
+        "question": "What pricing period applies, including any B/L-relative dates?"
+      },
+      {
+        "field": "/deal/pricing/differential/value",
+        "question": "What is the signed price differential value?"
+      },
+      {
+        "field": "/deal/pricing/differential/unit",
+        "question": "Is the differential stated in USD/MT or USD/BBL?"
+      },
+      {
+        "field": "/deal/payment_terms",
+        "question": "What are the agreed payment terms?"
+      },
+      {
+        "field": "/deal/currency",
+        "question": "What is the deal currency?"
+      }
+    ]
+  },
+  "id": "03_incomplete_must_abstain",
+  "source": {
+    "path": "data/recap_03.txt",
+    "sha256": "c07b302b303637c2e046535fc0600dd831fbe84555214ee2078505edbb6250d8"
+  }
+}

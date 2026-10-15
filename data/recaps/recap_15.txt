@@ -1,0 +1,20 @@
+From: trader@optiflow-dmcc.example
+Date: Sat, 12 Sep 2026 14:30 +0400
+Subject: FO recap / Constanta
+
+Deal agreed 12 September 2026.
+Seller: Optiflow Trading DMCC
+Buyer: Danube Industrial Fuels SA
+Product: Fuel Oil 3.5% S 380 CST
+Quantity: 45,000 MT +/-10% at seller's option
+Delivery: FOB Constanta
+Laycan: 1-5 November 2026
+Price: mean Argus FOB Black Sea Fuel Oil 3.5%, BL+0/+2, minus USD 6.00/MT
+Currency: USD
+Payment: LC at sight
+Inspection: Intertek at load, appointed and paid by seller
+
+--- reply, 13 Sep 2026 09:07 ---
+Three agreed changes only: laycan is 4–8 November 2026; differential is minus
+USD 7.25/MT, not 6.00; use SGS instead of Intertek and split inspection cost 50/50.
+Quantity stays 45,000 MT. All remaining terms stand. Confirmed.

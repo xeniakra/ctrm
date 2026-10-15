@@ -1,0 +1,479 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Nordlint Petrochemicals OU",
+      "currency": "EUR",
+      "delivery_term": {
+        "as_written": "CFR Rotterdam",
+        "incoterm": "CFR",
+        "place": "Rotterdam"
+      },
+      "delivery_window": {
+        "from": "2026-09-12",
+        "to": "2026-09-16"
+      },
+      "demurrage": null,
+      "fx": {
+        "basis": "fixed_agreed",
+        "quote": "USD/EUR",
+        "rate": 1.0852
+      },
+      "inspection": {
+        "appointed_by": "buyer",
+        "company": "Saybolt",
+        "cost_split": "buyer",
+        "location": "discharge"
+      },
+      "law": null,
+      "notes": [
+        "Rest as per our frame agreement of 14.03.2026."
+      ],
+      "payment_terms": {
+        "as_written": "90 pct provisional against documents within 3 banking days from B/L date, balance within 5 days after final pricing is established",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": {
+              "document_type": "documents",
+              "relation": "against"
+            },
+            "due": {
+              "day_basis": "banking_days",
+              "days": 3,
+              "event": "bill_of_lading",
+              "qualifier": "within",
+              "relation": "from"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": "percentage",
+              "percentage": 90
+            },
+            "stage": "provisional"
+          },
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": "days",
+              "days": 5,
+              "event": "final_pricing",
+              "qualifier": "within",
+              "relation": "after"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": "balance",
+              "percentage": null
+            },
+            "stage": "final"
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": 8
+        },
+        "period": {
+          "expression": "BL-1..BL+3",
+          "from_offset_days": -1,
+          "kind": "bl_relative",
+          "to_offset_days": 3
+        },
+        "quote_code": "ARGUS_CIF_NWE_NAPHTHA",
+        "statistic": "mean_of_high"
+      },
+      "product": {
+        "as_written": "naphtha full range",
+        "product_code": "NAPH",
+        "reference_name": "Naphtha full range"
+      },
+      "quality_spec": "spec per our standard NAPH-FR-2 sheet",
+      "quantity": {
+        "tolerance_option": "buyer",
+        "tolerance_pct": 5,
+        "unit": "BBL",
+        "value": 220000
+      },
+      "recap_date": "2026-08-19",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 1134,
+            "kind": "source",
+            "start": 1108
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1437,
+            "kind": "source",
+            "start": 1434
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 265,
+            "kind": "source",
+            "start": 252
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 255,
+            "kind": "source",
+            "start": 252
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 265,
+            "kind": "source",
+            "start": 256
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 374,
+            "kind": "source",
+            "start": 285
+          },
+          {
+            "end": 1311,
+            "kind": "source",
+            "start": 1280
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 374,
+            "kind": "source",
+            "start": 285
+          },
+          {
+            "end": 1311,
+            "kind": "source",
+            "start": 1280
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1493,
+            "kind": "source",
+            "start": 1421
+          }
+        ],
+        "field": "/deal/fx/basis"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1493,
+            "kind": "source",
+            "start": 1421
+          }
+        ],
+        "field": "/deal/fx/quote"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1493,
+            "kind": "source",
+            "start": 1421
+          }
+        ],
+        "field": "/deal/fx/rate"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1106,
+            "kind": "source",
+            "start": 1101
+          }
+        ],
+        "field": "/deal/inspection/appointed_by"
+      },
+      {
+        "evidence": [
+          {
+            "end": 781,
+            "kind": "source",
+            "start": 774
+          }
+        ],
+        "field": "/deal/inspection/company"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1106,
+            "kind": "source",
+            "start": 1101
+          }
+        ],
+        "field": "/deal/inspection/cost_split"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1682,
+            "kind": "source",
+            "start": 1673
+          }
+        ],
+        "field": "/deal/inspection/location"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1755,
+            "kind": "source",
+            "start": 1709
+          }
+        ],
+        "field": "/deal/notes/0"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1582,
+            "kind": "source",
+            "start": 1509
+          },
+          {
+            "end": 1642,
+            "kind": "source",
+            "start": 1586
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "ARGUS_CIF_NWE_NAPHTHA",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1396,
+            "kind": "source",
+            "start": 1315
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1168,
+            "kind": "source",
+            "start": 1150
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1168,
+            "kind": "source",
+            "start": 1150
+          },
+          {
+            "file": "data/products.csv",
+            "key": "NAPH",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "NAPH",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1207,
+            "kind": "source",
+            "start": 1170
+          }
+        ],
+        "field": "/deal/quality_spec"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1106,
+            "kind": "source",
+            "start": 1101
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1255,
+            "kind": "source",
+            "start": 1208
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1227,
+            "kind": "source",
+            "start": 1224
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1255,
+            "kind": "source",
+            "start": 1208
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1061,
+            "kind": "source",
+            "start": 993
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 1097,
+            "kind": "source",
+            "start": 1076
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": []
+  },
+  "id": "02_forwarded_amendments",
+  "source": {
+    "path": "data/recap_02.txt",
+    "sha256": "67de88966f298e411ee82ecfa64ff408b384696db3fca346a9056cd742620644"
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Oriole Petrochem GmbH",
+      "currency": "EUR",
+      "delivery_term": {
+        "as_written": "CFR Rotterdam",
+        "incoterm": "CFR",
+        "place": "Rotterdam"
+      },
+      "delivery_window": {
+        "from": "2026-10-22",
+        "to": "2026-10-25"
+      },
+      "demurrage": null,
+      "fx": {
+        "basis": "fixed_agreed",
+        "quote": "USD/EUR",
+        "rate": 1.091
+      },
+      "inspection": {
+        "appointed_by": "buyer",
+        "company": "Saybolt",
+        "cost_split": "buyer",
+        "location": "discharge"
+      },
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "Ninety percent provisional within three banking days of B/L and the balance five days after final pricing",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": "banking_days",
+              "days": 3,
+              "event": "bill_of_lading",
+              "qualifier": "within",
+              "relation": "of"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": "percentage",
+              "percentage": 90
+            },
+            "stage": "provisional"
+          },
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": "days",
+              "days": 5,
+              "event": "final_pricing",
+              "qualifier": null,
+              "relation": "after"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": "balance",
+              "percentage": null
+            },
+            "stage": "final"
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": 6.4
+        },
+        "period": {
+          "expression": "BL+0..BL+0",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 0
+        },
+        "quote_code": "ARGUS_CIF_NWE_NAPHTHA",
+        "statistic": "high"
+      },
+      "product": {
+        "as_written": "naphtha full range",
+        "product_code": "NAPH",
+        "reference_name": "Naphtha full range"
+      },
+      "quality_spec": "NAPH-FR-2 quality",
+      "quantity": {
+        "tolerance_option": "buyer",
+        "tolerance_pct": 5,
+        "unit": "BBL",
+        "value": 180000
+      },
+      "recap_date": "2026-09-04",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 135,
+            "kind": "source",
+            "start": 114
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 500,
+            "kind": "source",
+            "start": 476
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 281,
+            "kind": "source",
+            "start": 268
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 281,
+            "kind": "source",
+            "start": 268
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 281,
+            "kind": "source",
+            "start": 268
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 359,
+            "kind": "source",
+            "start": 301
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 359,
+            "kind": "source",
+            "start": 301
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 534,
+            "kind": "source",
+            "start": 502
+          }
+        ],
+        "field": "/deal/fx/basis"
+      },
+      {
+        "evidence": [
+          {
+            "end": 534,
+            "kind": "source",
+            "start": 502
+          }
+        ],
+        "field": "/deal/fx/quote"
+      },
+      {
+        "evidence": [
+          {
+            "end": 534,
+            "kind": "source",
+            "start": 502
+          }
+        ],
+        "field": "/deal/fx/rate"
+      },
+      {
+        "evidence": [
+          {
+            "end": 688,
+            "kind": "source",
+            "start": 643
+          }
+        ],
+        "field": "/deal/inspection/appointed_by"
+      },
+      {
+        "evidence": [
+          {
+            "end": 688,
+            "kind": "source",
+            "start": 643
+          }
+        ],
+        "field": "/deal/inspection/company"
+      },
+      {
+        "evidence": [
+          {
+            "end": 688,
+            "kind": "source",
+            "start": 643
+          }
+        ],
+        "field": "/deal/inspection/cost_split"
+      },
+      {
+        "evidence": [
+          {
+            "end": 688,
+            "kind": "source",
+            "start": 643
+          }
+        ],
+        "field": "/deal/inspection/location"
+      },
+      {
+        "evidence": [
+          {
+            "end": 603,
+            "kind": "source",
+            "start": 536
+          },
+          {
+            "end": 641,
+            "kind": "source",
+            "start": 604
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "ARGUS_CIF_NWE_NAPHTHA",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 470,
+            "kind": "source",
+            "start": 362
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 160,
+            "kind": "source",
+            "start": 142
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 160,
+            "kind": "source",
+            "start": 142
+          },
+          {
+            "file": "data/products.csv",
+            "key": "NAPH",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "NAPH",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 179,
+            "kind": "source",
+            "start": 162
+          }
+        ],
+        "field": "/deal/quality_spec"
+      },
+      {
+        "evidence": [
+          {
+            "end": 266,
+            "kind": "source",
+            "start": 181
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 266,
+            "kind": "source",
+            "start": 181
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 266,
+            "kind": "source",
+            "start": 181
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 266,
+            "kind": "source",
+            "start": 181
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 41,
+            "kind": "source",
+            "start": 25
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 99,
+            "kind": "source",
+            "start": 78
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": []
+  },
+  "id": "06_fixed_fx",
+  "source": {
+    "path": "data/recaps/recap_06.txt",
+    "sha256": "d7e3be6d7a27d22f16c36fc31a8bb0dcac804b011195e7f6bd0bedb42b77083e"
+  }
+}

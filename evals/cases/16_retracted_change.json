@@ -1,0 +1,376 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Bluehaven Aviation Ltd",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "CIF Antwerp",
+        "incoterm": "CIF",
+        "place": "Antwerp"
+      },
+      "delivery_window": {
+        "from": "2026-10-20",
+        "to": "2026-10-22"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "net 30 from B/L against documents",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": {
+              "document_type": "documents",
+              "relation": "against"
+            },
+            "due": {
+              "day_basis": "days",
+              "days": 30,
+              "event": "bill_of_lading",
+              "qualifier": "net",
+              "relation": "from"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": null,
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": 1.8
+        },
+        "period": {
+          "expression": "BL-1..BL+1",
+          "from_offset_days": -1,
+          "kind": "bl_relative",
+          "to_offset_days": 1
+        },
+        "quote_code": "PLATTS_FOB_ARA_JET",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Jet A-1",
+        "product_code": "JETA1",
+        "reference_name": "Jet A-1"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "buyer",
+        "tolerance_pct": 10,
+        "unit": "MT",
+        "value": 60000
+      },
+      "recap_date": "2026-09-13",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 135,
+            "kind": "source",
+            "start": 113
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 297,
+            "kind": "source",
+            "start": 278
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 190,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 190,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 190,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 217,
+            "kind": "source",
+            "start": 199
+          },
+          {
+            "end": 506,
+            "kind": "source",
+            "start": 437
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 217,
+            "kind": "source",
+            "start": 199
+          },
+          {
+            "end": 506,
+            "kind": "source",
+            "start": 437
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 324,
+            "kind": "source",
+            "start": 291
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_ARA_JET",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 276,
+            "kind": "source",
+            "start": 219
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 144,
+            "kind": "source",
+            "start": 137
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 144,
+            "kind": "source",
+            "start": 137
+          },
+          {
+            "file": "data/products.csv",
+            "key": "JETA1",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "JETA1",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 146
+          },
+          {
+            "end": 506,
+            "kind": "source",
+            "start": 437
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 146
+          },
+          {
+            "end": 506,
+            "kind": "source",
+            "start": 437
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 146
+          },
+          {
+            "end": 506,
+            "kind": "source",
+            "start": 437
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 146
+          },
+          {
+            "end": 506,
+            "kind": "source",
+            "start": 437
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 83,
+            "kind": "source",
+            "start": 52
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 106,
+            "kind": "source",
+            "start": 85
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": []
+  },
+  "id": "16_retracted_change",
+  "source": {
+    "path": "data/recaps/recap_16.txt",
+    "sha256": "53cf79206c838c8c79b989b5002815e5db5d6214ba72de08e1a79238aa42a780"
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Optiflow Trading DMCC",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Fujairah",
+        "incoterm": "FOB",
+        "place": "Fujairah"
+      },
+      "delivery_window": {
+        "from": "2026-11-06",
+        "to": "2026-11-08"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "full prepayment no later than two banking days before loading",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": "banking_days",
+              "days": 2,
+              "event": "loading",
+              "qualifier": "no_later_than",
+              "relation": "before"
+            },
+            "instrument": "prepayment",
+            "irrevocable": null,
+            "portion": {
+              "kind": "full",
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": 2.2
+        },
+        "period": {
+          "expression": "BL-1..BL+1",
+          "from_offset_days": -1,
+          "kind": "bl_relative",
+          "to_offset_days": 1
+        },
+        "quote_code": "PLATTS_FOB_FUJ_VLSFO",
+        "statistic": null
+      },
+      "product": {
+        "as_written": "VLSFO 0.5% S",
+        "product_code": "VLSFO",
+        "reference_name": "VLSFO 0.5% S"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "buyer",
+        "tolerance_pct": 5,
+        "unit": "MT",
+        "value": 35000
+      },
+      "recap_date": "2026-09-09",
+      "seller": "Gulfstar Bunkering LLC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 131,
+            "kind": "source",
+            "start": 110
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 420,
+            "kind": "source",
+            "start": 406
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 249,
+            "kind": "source",
+            "start": 237
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 249,
+            "kind": "source",
+            "start": 237
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 249,
+            "kind": "source",
+            "start": 237
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 289,
+            "kind": "source",
+            "start": 259
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 289,
+            "kind": "source",
+            "start": 259
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 492,
+            "kind": "source",
+            "start": 431
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 405,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 405,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 405,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 405,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 405,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 405,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 405,
+            "kind": "source",
+            "start": 298
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_FUJ_VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 156,
+            "kind": "source",
+            "start": 144
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 156,
+            "kind": "source",
+            "start": 144
+          },
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 228,
+            "kind": "source",
+            "start": 166
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 228,
+            "kind": "source",
+            "start": 166
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 228,
+            "kind": "source",
+            "start": 166
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 228,
+            "kind": "source",
+            "start": 166
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 520,
+            "kind": "source",
+            "start": 494
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 101,
+            "kind": "source",
+            "start": 79
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": [
+      {
+        "field": "/deal/pricing/statistic",
+        "question": "Which quotation statistic applies: mean, high, low, or mean of high?"
+      }
+    ]
+  },
+  "id": "10_missing_stat",
+  "source": {
+    "path": "data/recaps/recap_10.txt",
+    "sha256": "9aab804287fe58b0542bfeca8e64cab1282c339e5b65bf64126d80637d839d7e"
+  }
+}

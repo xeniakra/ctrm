@@ -1,0 +1,340 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Blackwater Refining Ltd",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Constanta",
+        "incoterm": "FOB",
+        "place": "Constanta"
+      },
+      "delivery_window": {
+        "from": "2026-11-04",
+        "to": "2026-11-07"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [
+        "Differential: TBC after today's call"
+      ],
+      "payment_terms": {
+        "as_written": "100% prepayment before loading",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": null,
+              "days": null,
+              "event": "loading",
+              "qualifier": null,
+              "relation": "before"
+            },
+            "instrument": "prepayment",
+            "irrevocable": null,
+            "portion": {
+              "kind": "percentage",
+              "percentage": 100
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": null,
+          "value": null
+        },
+        "period": {
+          "expression": "BL+0..BL+5",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 5
+        },
+        "quote_code": "ARGUS_FOB_BLACK_SEA_FO_35",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Fuel Oil 3.5% S 380 CST",
+        "product_code": "FO35",
+        "reference_name": "Fuel Oil 3.5% S 380 CST"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 10,
+        "unit": "MT",
+        "value": 28000
+      },
+      "recap_date": "2026-09-08",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 71,
+            "kind": "source",
+            "start": 48
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 343,
+            "kind": "source",
+            "start": 331
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 192,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 192,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 192,
+            "kind": "source",
+            "start": 179
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 223,
+            "kind": "source",
+            "start": 202
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 223,
+            "kind": "source",
+            "start": 202
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {"end": 329, "kind": "source", "start": 293}
+        ],
+        "field": "/deal/notes/0"
+      },
+      {
+        "evidence": [
+          {
+            "end": 384,
+            "kind": "source",
+            "start": 354
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 291,
+            "kind": "source",
+            "start": 238
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 291,
+            "kind": "source",
+            "start": 238
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 291,
+            "kind": "source",
+            "start": 238
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 291,
+            "kind": "source",
+            "start": 238
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 291,
+            "kind": "source",
+            "start": 238
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "ARGUS_FOB_BLACK_SEA_FO_35",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 291,
+            "kind": "source",
+            "start": 238
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 134,
+            "kind": "source",
+            "start": 111
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 134,
+            "kind": "source",
+            "start": 111
+          },
+          {
+            "file": "data/products.csv",
+            "key": "FO35",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "FO35",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 137
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 137
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 137
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 177,
+            "kind": "source",
+            "start": 137
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 28,
+            "kind": "source",
+            "start": 18
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 109,
+            "kind": "source",
+            "start": 88
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": [
+      {
+        "field": "/deal/pricing/differential/value",
+        "question": "What is the signed price differential value?"
+      },
+      {
+        "field": "/deal/pricing/differential/unit",
+        "question": "Is the differential stated in USD/MT or USD/BBL?"
+      }
+    ]
+  },
+  "id": "09_missing_diff",
+  "source": {
+    "path": "data/recaps/recap_09.txt",
+    "sha256": "87a1791ee87a6b03a09c5345ab3de557d22a1a10cc4cc10d774f44551d4362f1"
+  }
+}

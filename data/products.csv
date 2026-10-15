@@ -1,0 +1,9 @@
+product_code,product_name,typical_spec,default_unit,bbl_per_mt,density_kg_m3
+GO01,Gasoil 0.1% S,ISO 8217 / EN 590 equivalent,MT,7.45,845
+ULSD10,Ultra Low Sulphur Diesel 10 ppm,EN 590,MT,7.46,844
+JETA1,Jet A-1,DEF STAN 91-091,MT,7.88,800
+GAS95,Gasoline 95 RON unleaded,EN 228,MT,8.33,755
+FO35,Fuel Oil 3.5% S 380 CST,ISO 8217 RMG 380,MT,6.35,991
+VLSFO,VLSFO 0.5% S,ISO 8217 RMG 380 max 0.50% S,MT,6.42,980
+NAPH,Naphtha full range,,MT,8.90,705
+LPGMIX,LPG propane-butane mix 50/50,,MT,11.60,540

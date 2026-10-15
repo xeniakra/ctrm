@@ -1,0 +1,20 @@
+From: contracts@meridian.example
+Sent: Wednesday, 2 September 2026 15:40 CET
+Subject: ULSD deal confirmation
+
+Dear all,
+
+We hereby confirm the trade agreed today, 2 September 2026.
+
+Seller: Optiflow Trading DMCC
+Buyer: Meridian Fuels NV
+Product: ULSD 10 ppm, EN 590
+Quantity: 24,000 MT ±7% at buyer's option
+Delivery: DAP Antwerp Terminal 3
+Delivery window: 12–14 October 2026
+Pricing: low quotation of Platts CIF NWE ULSD 10 ppm over 20–24 October 2026, plus USD 4.75/MT
+Currency: USD
+Payment: irrevocable LC at sight against shipping documents
+
+Kind regards,
+Contracts

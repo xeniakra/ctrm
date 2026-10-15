@@ -1,0 +1,428 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Danube Industrial Fuels SA",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Constanta",
+        "incoterm": "FOB",
+        "place": "Constanta"
+      },
+      "delivery_window": {
+        "from": "2026-11-04",
+        "to": "2026-11-08"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": {
+        "appointed_by": "seller",
+        "company": "SGS",
+        "cost_split": "50/50",
+        "location": "load"
+      },
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "LC at sight",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": null,
+              "days": null,
+              "event": "sight",
+              "qualifier": null,
+              "relation": "at"
+            },
+            "instrument": "letter_of_credit",
+            "irrevocable": null,
+            "portion": {
+              "kind": null,
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -7.25
+        },
+        "period": {
+          "expression": "BL+0..BL+2",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 2
+        },
+        "quote_code": "ARGUS_FOB_BLACK_SEA_FO_35",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Fuel Oil 3.5% S 380 CST",
+        "product_code": "FO35",
+        "reference_name": "Fuel Oil 3.5% S 380 CST"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 10,
+        "unit": "MT",
+        "value": 45000
+      },
+      "recap_date": "2026-09-12",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 195,
+            "kind": "source",
+            "start": 169
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 412,
+            "kind": "source",
+            "start": 399
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 298,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 298,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 298,
+            "kind": "source",
+            "start": 285
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 324,
+            "kind": "source",
+            "start": 307
+          },
+          {
+            "end": 581,
+            "kind": "source",
+            "start": 554
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 324,
+            "kind": "source",
+            "start": 307
+          },
+          {
+            "end": 581,
+            "kind": "source",
+            "start": 554
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 492,
+            "kind": "source",
+            "start": 464
+          }
+        ],
+        "field": "/deal/inspection/appointed_by"
+      },
+      {
+        "evidence": [
+          {
+            "end": 655,
+            "kind": "source",
+            "start": 628
+          }
+        ],
+        "field": "/deal/inspection/company"
+      },
+      {
+        "evidence": [
+          {
+            "end": 687,
+            "kind": "source",
+            "start": 660
+          }
+        ],
+        "field": "/deal/inspection/cost_split"
+      },
+      {
+        "evidence": [
+          {
+            "end": 462,
+            "kind": "source",
+            "start": 446
+          }
+        ],
+        "field": "/deal/inspection/location"
+      },
+      {
+        "evidence": [
+          {
+            "end": 433,
+            "kind": "source",
+            "start": 422
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          },
+          {
+            "end": 626,
+            "kind": "source",
+            "start": 583
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          },
+          {
+            "end": 626,
+            "kind": "source",
+            "start": 583
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "ARGUS_FOB_BLACK_SEA_FO_35",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 398,
+            "kind": "source",
+            "start": 332
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 228,
+            "kind": "source",
+            "start": 205
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 228,
+            "kind": "source",
+            "start": 205
+          },
+          {
+            "file": "data/products.csv",
+            "key": "FO35",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "FO35",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 274,
+            "kind": "source",
+            "start": 239
+          },
+          {
+            "end": 713,
+            "kind": "source",
+            "start": 689
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 274,
+            "kind": "source",
+            "start": 239
+          },
+          {
+            "end": 713,
+            "kind": "source",
+            "start": 689
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 274,
+            "kind": "source",
+            "start": 239
+          },
+          {
+            "end": 713,
+            "kind": "source",
+            "start": 689
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 274,
+            "kind": "source",
+            "start": 239
+          },
+          {
+            "end": 713,
+            "kind": "source",
+            "start": 689
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 130,
+            "kind": "source",
+            "start": 101
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 161,
+            "kind": "source",
+            "start": 140
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": []
+  },
+  "id": "15_multi_amend",
+  "source": {
+    "path": "data/recaps/recap_15.txt",
+    "sha256": "2b03fe42edf4fd4245640415bfb70725b0a62e7e896b37a41d5ea465e81dfae0"
+  }
+}

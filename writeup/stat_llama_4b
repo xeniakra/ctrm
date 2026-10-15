@@ -1,0 +1,28 @@
+uilt with GNU 13.3.0 for Linux x86_64
+Server log: /workspace/ctrm/evals/results/20260910T155926Z_llama-server.log
+Server ready at http://127.0.0.1:8080; running 18 cases
+case                        accuracy  wrong-null  unsupported  schema  provenance  ms   
+--------------------------  --------  ----------  -----------  ------  ----------  -----
+01_clean_telegram           100.0%    0           0            yes     yes         47527
+02_forwarded_amendments     100.0%    0           0            yes     yes         49331
+03_incomplete_must_abstain  100.0%    0           0            yes     yes         26955
+04_calendar_low             100.0%    0           0            yes     yes         33815
+05_mixed_units              97.1%     0           0            yes     yes         39107
+06_fixed_fx                 100.0%    0           0            yes     yes         41370
+07_missing_fx               100.0%    0           0            yes     yes         34909
+08_delivered_term           100.0%    0           0            yes     yes         30866
+09_missing_diff             97.1%     0           0            yes     yes         35604
+10_missing_stat             100.0%    0           0            yes     yes         35092
+11_missing_period           100.0%    0           0            yes     yes         38853
+12_missing_option           100.0%    0           0            yes     yes         32982
+13_multi_cargo              100.0%    0           0            yes     yes         35531
+14_vague_quote              100.0%    0           0            yes     yes         33887
+15_multi_amend              97.4%     0           0            yes     yes         37754
+16_retracted_change         100.0%    0           0            yes     yes         31777
+17_deal_distraction         100.0%    0           0            yes     yes         36083
+18_agreement_date           100.0%    0           0            yes     yes         38243
+
+Overall accuracy 99.5%; wrong abstentions 0; unsupported values 0; p50/p95 35531/49331 ms; aggregate inference 26.4 completion tokens/s
+Actual outputs written to /workspace/ctrm/evals/results/20260910T155926Z_qwen3-4b-q4_k_m.json
+Per-recap extraction outputs written to /workspace/ctrm/evals/results/20260910T155926Z_qwen3-4b-q4_k_m.cases
+Peak model-server RAM: 7265.9 MiB; peak VRAM: unavailable

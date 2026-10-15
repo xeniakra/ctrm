@@ -1,0 +1,25 @@
+{
+  "id": "model_directed_recap_02_valuation",
+  "rationale": "The model must select MCP calls and local calculator actions using returned results. The client must preserve the recap, request the missing B/L date, and never replace a failed action with a scripted workflow.",
+  "source": "data/recaps/recap_02.txt",
+  "extraction_fixture": "evals/cases/02_forwarded_amendments.json",
+  "question": "what is the provisional value of the deal in recap_02.txt?",
+  "bl_date": "2026-09-14",
+  "initial_results": {"deal": null, "quote": null},
+  "actions": [
+    {"name": "parse_recap", "arguments": {"text": "$recap"}},
+    {"name": "ask_bl_date", "arguments": {}},
+    {"name": "resolve_pricing_period", "arguments": {}},
+    {"name": "get_price_quote", "arguments": {
+      "quote_code": "ARGUS_CIF_NWE_NAPHTHA",
+      "date_or_period": "2026-09-13..2026-09-17",
+      "statistic": "mean_of_high"
+    }},
+    {"name": "calculate_provisional_value", "arguments": {}}
+  ],
+  "expected": {
+    "tool_names": ["parse_recap", "get_price_quote"],
+    "provisional_value": {"amount": 13776764.60, "currency": "EUR"},
+    "provisional_payment": {"percentage": 90.0, "amount": 12399088.14, "currency": "EUR"}
+  }
+}

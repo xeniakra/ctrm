@@ -1,0 +1,377 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Seacrest Marine Pte Ltd",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Fujairah",
+        "incoterm": "FOB",
+        "place": "Fujairah"
+      },
+      "delivery_window": {
+        "from": "2026-10-25",
+        "to": "2026-10-27"
+      },
+      "demurrage": {
+        "basis": "pro rata",
+        "currency": "USD",
+        "rate_per_day": 31500
+      },
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "100% prepaid two banking days before loading",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": "banking_days",
+              "days": 2,
+              "event": "loading",
+              "qualifier": null,
+              "relation": "before"
+            },
+            "instrument": "prepayment",
+            "irrevocable": null,
+            "portion": {
+              "kind": "percentage",
+              "percentage": 100
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -0.75
+        },
+        "period": {
+          "expression": "BL+0..BL+3",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 3
+        },
+        "quote_code": "PLATTS_FOB_FUJ_VLSFO",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "VLSFO 0.5% S",
+        "product_code": "VLSFO",
+        "reference_name": "VLSFO 0.5% S"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 10,
+        "unit": "MT",
+        "value": 26000
+      },
+      "recap_date": "2026-09-14",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 206,
+            "kind": "source",
+            "start": 183
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 386,
+            "kind": "source",
+            "start": 369
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 269,
+            "kind": "source",
+            "start": 257
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 269,
+            "kind": "source",
+            "start": 257
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 269,
+            "kind": "source",
+            "start": 257
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 296,
+            "kind": "source",
+            "start": 278
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 296,
+            "kind": "source",
+            "start": 278
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 453,
+            "kind": "source",
+            "start": 420
+          }
+        ],
+        "field": "/deal/demurrage/basis"
+      },
+      {
+        "evidence": [
+          {
+            "end": 453,
+            "kind": "source",
+            "start": 420
+          }
+        ],
+        "field": "/deal/demurrage/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 453,
+            "kind": "source",
+            "start": 420
+          }
+        ],
+        "field": "/deal/demurrage/rate_per_day"
+      },
+      {
+        "evidence": [
+          {
+            "end": 418,
+            "kind": "source",
+            "start": 374
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_FUJ_VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 367,
+            "kind": "source",
+            "start": 298
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 220,
+            "kind": "source",
+            "start": 208
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 220,
+            "kind": "source",
+            "start": 208
+          },
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "VLSFO",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 255,
+            "kind": "source",
+            "start": 222
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 255,
+            "kind": "source",
+            "start": 222
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 255,
+            "kind": "source",
+            "start": 222
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 255,
+            "kind": "source",
+            "start": 222
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 145,
+            "kind": "source",
+            "start": 110
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 175,
+            "kind": "source",
+            "start": 154
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": []
+  },
+  "id": "17_deal_distraction",
+  "source": {
+    "path": "data/recaps/recap_17.txt",
+    "sha256": "6c9fc4a07ba82d8dce51c6c150e0f5de4a65c0c678aedb02a90269667bf8724c"
+  }
+}

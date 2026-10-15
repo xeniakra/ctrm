@@ -1,0 +1,31 @@
+python scripts/run_local_eval.py   --runtime vllm   --tensor-parallel-size 1   --ctx-size 8192   --startup-timeout 1800   --offline
+Using persistent model cache: /workspace/ctrm/models/huggingface
+Starting vLLM 0.29.0
+Server log: /workspace/ctrm/evals/results/20260910T183209Z_vllm-server.log
+Server ready at http://127.0.0.1:8000; running 18 cases
+case                        accuracy  wrong-null  unsupported  schema  provenance  ms   
+--------------------------  --------  ----------  -----------  ------  ----------  -----
+01_clean_telegram           97.6%     0           0            yes     yes         9934 
+02_forwarded_amendments     90.0%     0           0            yes     yes         10413
+03_incomplete_must_abstain  100.0%    0           0            yes     yes         4055 
+04_calendar_low             100.0%    0           0            yes     yes         5133 
+05_mixed_units              100.0%    0           0            yes     yes         4375 
+06_fixed_fx                 100.0%    0           0            yes     yes         10092
+07_missing_fx               100.0%    0           0            yes     yes         8455 
+08_delivered_term           100.0%    0           0            yes     yes         7686 
+09_missing_diff             97.1%     0           0            yes     yes         5376 
+10_missing_stat             100.0%    0           0            yes     yes         4344 
+11_missing_period           97.1%     0           0            yes     yes         4936 
+12_missing_option           100.0%    0           0            yes     yes         4109 
+13_multi_cargo              97.1%     0           0            yes     yes         5535 
+14_vague_quote              94.3%     0           1            yes     yes         7969 
+15_multi_amend              94.7%     0           0            yes     yes         9161 
+16_retracted_change         97.1%     0           0            yes     yes         4132 
+17_deal_distraction         97.3%     0           0            yes     yes         9798 
+18_agreement_date           100.0%    0           0            yes     yes         4839 
+
+Overall accuracy 97.8%; wrong abstentions 0; unsupported values 1; p50/p95 5376/10413 ms; aggregate inference 134.9 completion tokens/s
+Actual outputs written to /workspace/ctrm/evals/results/20260910T183209Z_qwen3-30b-a3b-fp8.json
+Per-recap extraction outputs written to /workspace/ctrm/evals/results/20260910T183209Z_qwen3-30b-a3b-fp8.cases
+Peak model-server RAM: 11765.6 MiB; peak VRAM: unavailable
+Stopped vLLM; evaluation report: /workspace/ctrm/evals/results/20260910T183209Z_qwen3-30b-a3b-fp8.json

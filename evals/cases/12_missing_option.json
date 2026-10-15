@@ -1,0 +1,338 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Aster Marine Energy PLC",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "CIF Piraeus",
+        "incoterm": "CIF",
+        "place": "Piraeus"
+      },
+      "delivery_window": {
+        "from": "2026-11-14",
+        "to": "2026-11-17"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": null,
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "LC at sight",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": null,
+            "due": {
+              "day_basis": null,
+              "days": null,
+              "event": "sight",
+              "qualifier": null,
+              "relation": "at"
+            },
+            "instrument": "letter_of_credit",
+            "irrevocable": null,
+            "portion": {
+              "kind": null,
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -11.25
+        },
+        "period": {
+          "expression": "BL+0..BL+3",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 3
+        },
+        "quote_code": "PLATTS_FOB_MED_ITALY_GASOIL_01",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Gasoil 0.1% S",
+        "product_code": "GO01",
+        "reference_name": "Gasoil 0.1% S"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": null,
+        "tolerance_pct": 10,
+        "unit": "MT",
+        "value": 52000
+      },
+      "recap_date": "2026-09-11",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 94,
+            "kind": "source",
+            "start": 71
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 302,
+            "kind": "source",
+            "start": 293
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 176,
+            "kind": "source",
+            "start": 165
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 176,
+            "kind": "source",
+            "start": 165
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 176,
+            "kind": "source",
+            "start": 165
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 202,
+            "kind": "source",
+            "start": 183
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 202,
+            "kind": "source",
+            "start": 183
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 320,
+            "kind": "source",
+            "start": 309
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_MED_ITALY_GASOIL_01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 292,
+            "kind": "source",
+            "start": 209
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 114,
+            "kind": "source",
+            "start": 101
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 114,
+            "kind": "source",
+            "start": 101
+          },
+          {
+            "file": "data/products.csv",
+            "key": "GO01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "GO01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 158,
+            "kind": "source",
+            "start": 121
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 158,
+            "kind": "source",
+            "start": 121
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 158,
+            "kind": "source",
+            "start": 121
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 371,
+            "kind": "source",
+            "start": 338
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 64,
+            "kind": "source",
+            "start": 43
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": [
+      {
+        "field": "/deal/quantity/tolerance_option",
+        "question": "Whose option applies to the quantity tolerance: buyer or seller?"
+      }
+    ]
+  },
+  "id": "12_missing_option",
+  "source": {
+    "path": "data/recaps/recap_12.txt",
+    "sha256": "39f2f6cee171b40e377bf92ccabd614360be63b5b905944f89de90e0b6e1aed0"
+  }
+}

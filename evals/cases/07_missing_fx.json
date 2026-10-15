@@ -1,0 +1,359 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Helios Distribution SA",
+      "currency": "EUR",
+      "delivery_term": {
+        "as_written": "FOB Augusta, Italy",
+        "incoterm": "FOB",
+        "place": "Augusta, Italy"
+      },
+      "delivery_window": {
+        "from": "2026-10-26",
+        "to": "2026-10-29"
+      },
+      "demurrage": null,
+      "fx": {
+        "basis": null,
+        "quote": null,
+        "rate": null
+      },
+      "inspection": null,
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "100% five banking days after B/L against documents",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": {
+              "document_type": "documents",
+              "relation": "against"
+            },
+            "due": {
+              "day_basis": "banking_days",
+              "days": 5,
+              "event": "bill_of_lading",
+              "qualifier": null,
+              "relation": "after"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": "percentage",
+              "percentage": 100
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -9.0
+        },
+        "period": {
+          "expression": "BL+1..BL+3",
+          "from_offset_days": 1,
+          "kind": "bl_relative",
+          "to_offset_days": 3
+        },
+        "quote_code": "PLATTS_FOB_MED_ITALY_GASOIL_01",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Gasoil 0.1% S",
+        "product_code": "GO01",
+        "reference_name": "Gasoil 0.1% S"
+      },
+      "quality_spec": null,
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 10,
+        "unit": "MT",
+        "value": 32000
+      },
+      "recap_date": "2026-09-06",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 158,
+            "kind": "source",
+            "start": 136
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 372,
+            "kind": "source",
+            "start": 352
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 239,
+            "kind": "source",
+            "start": 221
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 239,
+            "kind": "source",
+            "start": 221
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 239,
+            "kind": "source",
+            "start": 221
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 269,
+            "kind": "source",
+            "start": 248
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 269,
+            "kind": "source",
+            "start": 248
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 477,
+            "kind": "source",
+            "start": 427
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_MED_ITALY_GASOIL_01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 350,
+            "kind": "source",
+            "start": 280
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 185,
+            "kind": "source",
+            "start": 172
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 185,
+            "kind": "source",
+            "start": 172
+          },
+          {
+            "file": "data/products.csv",
+            "key": "GO01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "GO01",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 219,
+            "kind": "source",
+            "start": 159
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 219,
+            "kind": "source",
+            "start": 159
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 219,
+            "kind": "source",
+            "start": 159
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 219,
+            "kind": "source",
+            "start": 159
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 106,
+            "kind": "source",
+            "start": 89
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 129,
+            "kind": "source",
+            "start": 108
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": [
+      {
+        "field": "/deal/fx/basis",
+        "question": "What FX basis applies: a fixed agreed rate or a specified published rate?"
+      },
+      {
+        "field": "/deal/fx/rate",
+        "question": "What FX rate or fixing rule should be used to convert the EUR deal?"
+      }
+    ]
+  },
+  "id": "07_missing_fx",
+  "source": {
+    "path": "data/recaps/recap_07.txt",
+    "sha256": "0182695e968a1ab786796dc039651c84782cbbd5111deae77dfd3e54e1374e2f"
+  }
+}

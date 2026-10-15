@@ -1,0 +1,391 @@
+{
+  "expected": {
+    "deal": {
+      "arbitration": null,
+      "buyer": "Harborside Aviation Ltd",
+      "currency": "USD",
+      "delivery_term": {
+        "as_written": "FOB Amsterdam",
+        "incoterm": "FOB",
+        "place": "Amsterdam"
+      },
+      "delivery_window": {
+        "from": "2026-11-02",
+        "to": "2026-11-04"
+      },
+      "demurrage": null,
+      "fx": null,
+      "inspection": {
+        "appointed_by": null,
+        "company": "SGS",
+        "cost_split": "50/50",
+        "location": "load"
+      },
+      "law": null,
+      "notes": [],
+      "payment_terms": {
+        "as_written": "net 30 days from B/L against original documents",
+        "late_interest": null,
+        "payments": [
+          {
+            "document_condition": {
+              "document_type": "original_documents",
+              "relation": "against"
+            },
+            "due": {
+              "day_basis": "days",
+              "days": 30,
+              "event": "bill_of_lading",
+              "qualifier": "net",
+              "relation": "from"
+            },
+            "instrument": null,
+            "irrevocable": null,
+            "portion": {
+              "kind": null,
+              "percentage": null
+            },
+            "stage": null
+          }
+        ]
+      },
+      "pricing": {
+        "differential": {
+          "unit": "USD/MT",
+          "value": -3.1
+        },
+        "period": {
+          "expression": "BL+0..BL+2",
+          "from_offset_days": 0,
+          "kind": "bl_relative",
+          "to_offset_days": 2
+        },
+        "quote_code": "PLATTS_FOB_ARA_JET",
+        "statistic": "mean"
+      },
+      "product": {
+        "as_written": "Jet A-1",
+        "product_code": "JETA1",
+        "reference_name": "Jet A-1"
+      },
+      "quality_spec": "DEF STAN 91-091",
+      "quantity": {
+        "tolerance_option": "seller",
+        "tolerance_pct": 5,
+        "unit": "MT",
+        "value": 42000
+      },
+      "recap_date": "2026-09-05",
+      "seller": "Optiflow Trading DMCC",
+      "vessel": null
+    },
+    "provenance": [
+      {
+        "evidence": [
+          {
+            "end": 547,
+            "kind": "source",
+            "start": 524
+          }
+        ],
+        "field": "/deal/buyer"
+      },
+      {
+        "evidence": [
+          {
+            "end": 776,
+            "kind": "source",
+            "start": 760
+          }
+        ],
+        "field": "/deal/currency"
+      },
+      {
+        "evidence": [
+          {
+            "end": 662,
+            "kind": "source",
+            "start": 649
+          }
+        ],
+        "field": "/deal/delivery_term/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 662,
+            "kind": "source",
+            "start": 649
+          }
+        ],
+        "field": "/deal/delivery_term/incoterm"
+      },
+      {
+        "evidence": [
+          {
+            "end": 662,
+            "kind": "source",
+            "start": 649
+          }
+        ],
+        "field": "/deal/delivery_term/place"
+      },
+      {
+        "evidence": [
+          {
+            "end": 691,
+            "kind": "source",
+            "start": 674
+          }
+        ],
+        "field": "/deal/delivery_window/from"
+      },
+      {
+        "evidence": [
+          {
+            "end": 691,
+            "kind": "source",
+            "start": 674
+          }
+        ],
+        "field": "/deal/delivery_window/to"
+      },
+      {
+        "evidence": [
+          {
+            "end": 885,
+            "kind": "source",
+            "start": 852
+          }
+        ],
+        "field": "/deal/inspection/company"
+      },
+      {
+        "evidence": [
+          {
+            "end": 885,
+            "kind": "source",
+            "start": 865
+          }
+        ],
+        "field": "/deal/inspection/cost_split"
+      },
+      {
+        "evidence": [
+          {
+            "end": 863,
+            "kind": "source",
+            "start": 852
+          }
+        ],
+        "field": "/deal/inspection/location"
+      },
+      {
+        "evidence": [
+          {
+            "end": 836,
+            "kind": "source",
+            "start": 789
+          }
+        ],
+        "field": "/deal/payment_terms"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          }
+        ],
+        "field": "/deal/pricing/differential/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          }
+        ],
+        "field": "/deal/pricing/differential/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          }
+        ],
+        "field": "/deal/pricing/period/expression"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          }
+        ],
+        "field": "/deal/pricing/period/from_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          }
+        ],
+        "field": "/deal/pricing/period/kind"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          }
+        ],
+        "field": "/deal/pricing/period/to_offset_days"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          },
+          {
+            "file": "data/price_quotes.csv",
+            "key": "PLATTS_FOB_ARA_JET",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/pricing/quote_code"
+      },
+      {
+        "evidence": [
+          {
+            "end": 759,
+            "kind": "source",
+            "start": 702
+          }
+        ],
+        "field": "/deal/pricing/statistic"
+      },
+      {
+        "evidence": [
+          {
+            "end": 104,
+            "kind": "source",
+            "start": 97
+          }
+        ],
+        "field": "/deal/product/as_written"
+      },
+      {
+        "evidence": [
+          {
+            "end": 104,
+            "kind": "source",
+            "start": 97
+          },
+          {
+            "file": "data/products.csv",
+            "key": "JETA1",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/product_code"
+      },
+      {
+        "evidence": [
+          {
+            "file": "data/products.csv",
+            "key": "JETA1",
+            "kind": "reference"
+          }
+        ],
+        "field": "/deal/product/reference_name"
+      },
+      {
+        "evidence": [
+          {
+            "end": 584,
+            "kind": "source",
+            "start": 569
+          }
+        ],
+        "field": "/deal/quality_spec"
+      },
+      {
+        "evidence": [
+          {
+            "end": 635,
+            "kind": "source",
+            "start": 598
+          }
+        ],
+        "field": "/deal/quantity/tolerance_option"
+      },
+      {
+        "evidence": [
+          {
+            "end": 635,
+            "kind": "source",
+            "start": 598
+          }
+        ],
+        "field": "/deal/quantity/tolerance_pct"
+      },
+      {
+        "evidence": [
+          {
+            "end": 635,
+            "kind": "source",
+            "start": 598
+          }
+        ],
+        "field": "/deal/quantity/unit"
+      },
+      {
+        "evidence": [
+          {
+            "end": 635,
+            "kind": "source",
+            "start": 598
+          }
+        ],
+        "field": "/deal/quantity/value"
+      },
+      {
+        "evidence": [
+          {
+            "end": 361,
+            "kind": "source",
+            "start": 331
+          }
+        ],
+        "field": "/deal/recap_date"
+      },
+      {
+        "evidence": [
+          {
+            "end": 513,
+            "kind": "source",
+            "start": 492
+          }
+        ],
+        "field": "/deal/seller"
+      }
+    ],
+    "questions": []
+  },
+  "id": "18_agreement_date",
+  "source": {
+    "path": "data/recaps/recap_18.txt",
+    "sha256": "0d9af665cdb9120fd731395b20cef6ba4f359b50170de3dedc25e21eedd6e685"
+  }
+}

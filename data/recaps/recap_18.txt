@@ -1,0 +1,26 @@
+From: Ops Archive <archive@optiflow-dmcc.example>
+Date: Mon, 7 Sep 2026 09:00 +0400
+Subject: FW: Jet A-1 recap
+
+Archive the confirmed exchange below. No commercial changes from operations.
+
+> From: Lena Ortiz <lena@harborside.example>
+> Date: Sat, 5 Sep 2026 16:44 +0100
+> Subject: RE: Jet A-1 recap
+>
+> Confirmed without changes. Agreed today, 5 September 2026.
+>
+>> From: Noor Rahman <noor@optiflow-dmcc.example>
+>> Date: Fri, 4 Sep 2026 18:10 +0400
+>> Subject: Jet A-1 recap
+>>
+>> Seller: Optiflow Trading DMCC
+>> Buyer: Harborside Aviation Ltd
+>> Product: Jet A-1, DEF STAN 91-091
+>> Quantity: 42,000 MT +/-5 pct at seller's option
+>> Delivery: FOB Amsterdam
+>> Laycan: 2-4 November 2026
+>> Price: mean Platts FOB ARA Jet A-1, B/L +0/+2, minus USD 3.10/MT
+>> Currency: USD
+>> Payment: net 30 days from B/L against original documents
+>> Inspection: SGS at load, costs equally shared

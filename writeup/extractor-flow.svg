@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1480" viewBox="0 0 1200 1480">
+  <title>Extractor flow: model calls and deterministic evidence handling</title>
+  <desc>A single flowchart following RecapExtractor.extract and _finalize. Code normalizes model output, enriches references from CSV catalogs, verifies model evidence quotations, handles bounded repairs, and assembles provenance.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#444"/></marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #202020; font-size: 18px; text-anchor: middle; }
+      .title { font-size: 27px; font-weight: bold; }
+      .head { font-weight: bold; font-size: 19px; }
+      .small { font-size: 16px; }
+      .box { fill: white; stroke: #444; stroke-width: 1.5; }
+      .llm { fill: #f0f0f0; stroke: #222; stroke-width: 2; }
+      .line { fill: none; stroke: #444; stroke-width: 1.5; marker-end: url(#arrow); }
+      .data { stroke-dasharray: 5 4; }
+    </style>
+  </defs>
+  <rect width="1200" height="1480" fill="white"/>
+  <text x="600" y="36" class="title">extractor.py — extraction and evidence flow</text>
+  <text x="600" y="63" class="small">LLM = model call · CODE = deterministic Python · original recap retained throughout</text>
+
+  <rect x="330" y="90" width="470" height="70" class="box"/>
+  <text x="565" y="117" class="head">CODE: accept non-empty recap text</text>
+  <text x="565" y="143">Build prompt + extraction JSON Schema</text>
+  <path d="M565 160 V190" class="line"/>
+
+  <rect x="330" y="190" width="470" height="80" class="llm"/>
+  <text x="565" y="220" class="head">LLM: extract deal JSON</text>
+  <text x="565" y="249">First call contains no evidence or offsets</text>
+  <path d="M565 270 V305" class="line"/>
+
+  <rect x="330" y="305" width="470" height="95" class="box"/>
+  <text x="565" y="331" class="head">CODE: normalize and validate</text>
+  <text x="565" y="356">Explicit rules → values, spans, questions</text>
+  <text x="565" y="382">Validate GeneratedExtraction</text>
+  <path d="M800 340 H870" class="line"/>
+  <text x="835" y="327" class="small">invalid</text>
+  <rect x="870" y="300" width="305" height="105" class="llm"/>
+  <text x="1022" y="326" class="head">LLM: repair extraction once</text>
+  <text x="1022" y="352">CODE: normalize + validate</text>
+  <text x="1022" y="380" class="small">Still invalid → extraction fails</text>
+  <path d="M1022 405 V426 H565 V450" class="line"/>
+  <text x="1087" y="425" class="small">valid</text>
+  <path d="M565 400 V450" class="line"/>
+  <text x="596" y="420" class="small">valid</text>
+
+  <rect x="330" y="450" width="470" height="100" class="box"/>
+  <text x="565" y="477" class="head">CODE: enrich references</text>
+  <text x="565" y="504">Resolve product_code / reference_name</text>
+  <text x="565" y="530">Resolve quote_code; collect source spans</text>
+  <rect x="25" y="434" width="260" height="131" class="box"/>
+  <text x="155" y="459" class="head">ReferenceCatalog</text>
+  <text x="155" y="484" class="small">Loaded at construction from:</text>
+  <text x="155" y="510">products.csv</text>
+  <text x="155" y="535">price_quotes.csv</text>
+  <text x="155" y="555" class="small">Product / quote codes and names</text>
+  <path d="M285 500 H330" class="line data"/>
+  <path d="M565 550 V590" class="line"/>
+
+  <rect x="330" y="590" width="470" height="95" class="box"/>
+  <text x="565" y="617" class="head">CODE: prepare evidence targets</text>
+  <text x="565" y="643">Normalize again; select non-null groups</text>
+  <text x="565" y="669" class="small">Skip parser-proven groups and derived product fields</text>
+  <path d="M565 685 V725" class="line"/>
+  <text x="644" y="710" class="small">targets exist</text>
+  <path d="M330 638 H302 V1100 H565 V1125" class="line"/>
+  <text x="209" y="733" class="small">No targets:</text>
+  <text x="209" y="756" class="small">skip evidence calls</text>
+
+  <rect x="330" y="725" width="470" height="80" class="llm"/>
+  <text x="565" y="754" class="head">LLM: find evidence for target values</text>
+  <text x="565" y="781">Return quotations from the original recap</text>
+  <path d="M565 805 V845" class="line"/>
+
+  <rect x="330" y="845" width="470" height="105" class="box"/>
+  <text x="565" y="872" class="head">CODE: validate and locate quotations</text>
+  <text x="565" y="899">Verify source matches → [start, end) spans</text>
+  <text x="565" y="926" class="small">Missing = targets without model or existing spans</text>
+  <path d="M800 895 H870" class="line"/>
+  <text x="835" y="878" class="small">missing</text>
+  <rect x="870" y="845" width="305" height="100" class="llm"/>
+  <text x="1022" y="872" class="head">LLM: repair evidence once</text>
+  <text x="1022" y="900">Only missing targets</text>
+  <text x="1022" y="926">CODE: verify repaired quotes</text>
+  <path d="M1022 945 V975" class="line"/>
+  <rect x="870" y="975" width="305" height="115" class="box"/>
+  <text x="1022" y="1001" class="head">CODE: if still unproven</text>
+  <text x="1022" y="1027">Null unsupported fields;</text>
+  <text x="1022" y="1051">preserve proven subfields</text>
+  <text x="1022" y="1076" class="small">Remove unproven notes; rebuild questions</text>
+  <path d="M1022 1090 V1107 H835 V1168 H800" class="line"/>
+  <path d="M565 950 V990" class="line"/>
+  <text x="645" y="976" class="small">all targets proven</text>
+
+  <rect x="330" y="990" width="470" height="80" class="box"/>
+  <text x="565" y="1019" class="head">Evidence complete</text>
+  <text x="565" y="1046">Keep verified model spans with existing spans</text>
+  <path d="M565 1070 V1125" class="line"/>
+
+  <rect x="330" y="1125" width="470" height="125" class="box"/>
+  <text x="565" y="1152" class="head">CODE: assemble provenance</text>
+  <text x="565" y="1179">Merge spans; remove duplicate notes</text>
+  <text x="565" y="1206">Source evidence: {kind, start, end}</text>
+  <text x="565" y="1233">CSV reference evidence: {kind, file, key}</text>
+  <text x="153" y="1170" class="small">Product fields: products.csv</text>
+  <text x="153" y="1196" class="small">Quote code: price_quotes.csv</text>
+  <path d="M280 1212 H330" class="line data"/>
+  <path d="M565 1250 V1290" class="line"/>
+
+  <rect x="330" y="1290" width="470" height="85" class="box"/>
+  <text x="565" y="1319" class="head">CODE: validate ExtractionResult</text>
+  <text x="565" y="1348">Return deal + questions + provenance</text>
+
+  <text x="600" y="1420" class="small">Malformed evidence responses or failed final validation → ExtractionFailedError.</text>
+  <text x="600" y="1447" class="small">CSV use here resolves references only. Price aggregation and unit conversion happen outside extractor.py.</text>
+</svg>

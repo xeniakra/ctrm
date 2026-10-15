@@ -1,0 +1,47 @@
+From: Ilya Bergmann <i.bergmann@optiflow-dmcc.example>
+To: Ops <ops@optiflow-dmcc.example>; Trading Desk <desk@optiflow-dmcc.example>
+Cc: Marta Vinkelis <m.vinkelis@nordlint.example>
+Date: Thu, 20 Aug 2026 09:14:22 +0400
+Subject: RE: RE: RECAP naphtha CFR Rotterdam / Nordlint
+
+Team,
+
+pls note laycan now 12-16 September (was 08-12), counterparty asked to move it, I agreed.
+Everything else in the recap below stands.
+
+Separately, on the VLSFO cargo for Fujairah we are still waiting for Marta to come back on the
+inspector, don't book anything yet on that one.
+
+Ilya
+
+> From: Marta Vinkelis <m.vinkelis@nordlint.example>
+> Date: Wed, 19 Aug 2026 18:51:03 +0200
+> Subject: RE: RECAP naphtha CFR Rotterdam / Nordlint
+>
+> Confirmed from our side. One correction, inspector is Saybolt not Intertek,
+> appointed by us, at our cost as agreed.
+>
+>> From: Ilya Bergmann <i.bergmann@optiflow-dmcc.example>
+>> Date: Wed, 19 Aug 2026 16:07:41 +0400
+>> Subject: RECAP naphtha CFR Rotterdam / Nordlint
+>>
+>> Marta, recap of our call today 19.08.2026, pls confirm by return.
+>>
+>> Seller: Optiflow Trading DMCC
+>> Buyer: Nordlint Petrochemicals OU
+>>
+>> Product: naphtha full range, spec per our standard NAPH-FR-2 sheet
+>> Qty: 220,000 bbl +/- 5 pct in buyer's option
+>> Terms: CFR Rotterdam
+>> Laycan: 08-12 September 2026
+>>
+>> Pricing: mean of the HIGH quotations, Argus CIF NWE Naphtha, over B/L -1 / +3,
+>> plus USD 8.00 per MT
+>> Currency: EUR, converted at a fixed agreed rate of 1.0852 USD per EUR
+>>
+>> Payment: 90 pct provisional against documents within 3 banking days from B/L date,
+>> balance within 5 days after final pricing is established
+>>
+>> Inspection: Intertek at discharge, appointed by buyer
+>>
+>> Rest as per our frame agreement of 14.03.2026.
